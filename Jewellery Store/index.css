@@ -1,0 +1,129 @@
+body{
+    background-color: #EEE3CB;
+}
+
+.navbar-brand-custom{
+    background-color: #967E76 !important;
+}
+
+.navbar-brand-pic{
+    margin-left: 3px;
+}
+
+.nav-active{
+    font-weight: bold;
+    text-decoration: none !important;
+    cursor: default;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+.fa-brands{
+    color: black;
+    transition: 1s ease-in-out;
+}
+
+.fa-brands:hover{
+    transform: scale(1.2);
+}
+
+.brand-name-navbar{
+    transition: 1s ease-in-out;
+}
+
+.brand-name-navbar:hover{
+    transform: scale(1.06);
+}
+
+.quotes{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 426px) {
+    .quotes{
+        font-size: 0.7rem;
+    }
+}
+
+.animate-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-left.animate-visible,
+.animate-right.animate-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.ending{
+    display: flex;
+    justify-content: center;
+}
+
+.page-footer{
+    background-color: #967E76 !important;
+}
+
+.smaller-img {
+    max-width: 200px;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+.card {
+    background-color: #D7C0AE;
+    animation: fadeIn 0.5s ease; 
+    text-align: center;
+}
+.gallery-card{
+    text-align: center;
+}
+.gallery-card:hover .card-body {
+    opacity: 1; /* Show the card body on hover */
+}
+
+/* Custom CSS for animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Move the card down by 20px */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move the card back to its original position */
+    }
+}
+
+.gallery-card {
+    animation: fadeIn 0.5s ease; /* Apply the fadeIn animation */
+}
+
+.card-body {
+    opacity: 0; /* Hide the card body by default */
+    transition: opacity 0.3s ease; /* Add transition for smooth effect */
+}
